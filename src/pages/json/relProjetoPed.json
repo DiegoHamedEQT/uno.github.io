@@ -1,0 +1,96 @@
+{
+  "PED": {
+    "PD_ProjetoBase": {
+      "AvIniANEEL": "",
+      "ProjEstrat": "",
+      "Titulo": "",
+      "PesquisaPalavraChave": "",
+      "Duracao": "",
+      "Segmento": "",
+      "CodTema": "",
+      "OutroTema": "",
+      "Subtemas": {
+        "Subtema": {
+          "CodSubtema": "",
+          "OutroSubtema": ""
+        }
+      },
+      "FaseInovacao": "",
+      "TipoProduto": "",
+      "Nacionalizacao": "",
+      "DescricaoProduto": "",
+      "Motivacao": "",
+      "Originalidade": "",
+      "Aplicabilidade": "",
+      "Relevancia": "",
+      "RazoabCustos": "",
+      "PesqCorrelata": ""
+    },
+    "PD_Equipe": {
+      "Empresas": {
+        "Empresa": {
+          "CodEmpresa": "",
+          "TipoEmpresa": "",
+          "Equipe": {
+            "EquipeEmpresa": 
+            {
+              "NomeMbEqEmp": "",
+              "CpfMbEqEmp": "",
+              "TitulacaoMbEqEmp": "",
+              "FuncaoMbEqEmp": ""
+            }
+          }
+        }
+      },
+      "Executoras": {
+        "Executora": {
+          "CNPJExec": "",
+          "RazaoSocialExec": "",
+          "UfExec": "",
+          "Equipe": {
+            "EquipeExec": {
+              "NomeMbEqExec": "",
+              "BRMbEqExec": "",
+              "DocMbEqExec": "",
+              "TitulacaoMbEqExec": "",
+              "FuncaoMbEqExec": ""
+            }
+          }
+        }
+          
+          
+      }
+    },
+    "PD_Recursos": {
+      "RecursoEmpresa": {
+        "CodEmpresa": "",
+        "DestRecursosExec": {
+            "CNPJExec": "",
+            "CEPExec": "",
+            "CustoCatContabilExec": {
+              "CatContabil": "",
+              "CustoExec": ""
+            }
+        },
+        "DestRecursosEmp": {
+          "CustoCatContabilEmp": {
+            "CatContabil": "",
+            "CustoEmp": ""
+            }
+          }
+      }
+    },
+    "RecursoParceira": {
+      "CNPJExec": "",
+      "CEPParc": "",
+      "DestRecursosExec": {
+        "CNPJExec": "",
+        "CEPExec": "",
+        "CustoCatContabilExec": {
+          "CatContabil": "",
+          "CustoExec": ""
+        }
+      }
+    } 
+  }
+}

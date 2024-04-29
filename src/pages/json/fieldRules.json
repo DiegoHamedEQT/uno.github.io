@@ -1,0 +1,53 @@
+{
+    "possibleEmptyFields": [
+        "executoras",
+        "destrecursosexec",
+        "destrecursosemp",
+        "recursoparceira",
+        "pd_equipeexec",
+        "pd_resultadoscp",
+        "pd_resultadosct_pc",
+        "pd_resultadosct_ie",
+        "pd_resultadosct_pi",
+        "pd_resultadosie"
+    ],
+    "optionsFields":{
+        "segmento": ["G", "T", "D", "C"],
+        "faseinovacao": ["PB", "PA", "DE", "CS", "LP", "IM"],
+        "codtema": ["FA", "GT", "GB", "MA", "SE", "EE", "PL", "OP", "SC", "QC", "MF", "OU"],
+        "tipoproduto": ["CM", "SW", "SM", "MS", "CD", "ME"],
+        "titulacaombeqexec": ["DO", "ME", "ES", "SU", "TE"],
+        "funcaombeqexec": ["CO", "GE", "PE", "AT", "AB", "AA"],
+        "categoriacontabil": ["RH", "ST", "MC", "MP", "VD", "OU"],
+        "projestrat": ["S", "N"],
+        "nacionalizacao": ["S", "N"],
+        "tipoempresa": ["P", "C"],
+        "titulacaombeqemp": ["DO", "ME", "ES", "SU", "TE"],
+        "funcaombeqemp": ["CO", "GE", "PE", "AT", "AB", "AA"],
+        "catcontabilexec": ["RH", "ST", "MC", "MP", "VD", "OU"],
+        "catcontabilemp": ["RH", "ST", "MC", "MP", "VD", "OU"],
+        "catcontabil": ["RH", "ST", "MC", "MP", "VD", "OU"]
+    },
+    "dependentFields": {
+        "outrotema": "codtema",
+        "outrosubtema": "codsubtema"
+    },
+    "multiplesList": [
+        "subtemas",
+        "etapa",
+        "recursoempresa",
+        "subtema",
+        "empresa",
+        "equipeempresa",
+        "equipeexec",
+        "equipe",
+        "destrecursosexec",
+        "custocatcontabil",
+        "custocatcontabilexec",
+        "itemdespesa",
+        "custocatcontabilemp",
+        "itemdespesa",
+        "depositante",
+        "inventor"
+    ]
+}

@@ -1,0 +1,202 @@
+{
+    "PED": {
+        "PD_RelFinalBase": [
+            {"CodProjeto": ""},
+            {"ArquivoPDF": ""},
+            {"DataIniODS": ""},
+            {"DataFimODS": ""},
+            {"ProdPrev": ""},
+            {"ProdJust": ""},
+            {"ProdEspTec": ""},
+            {"TecPrev": ""},
+            {"TecJust": ""},
+            {"TecDesc": ""},
+            {"AplicPrev": ""},
+            {"AplicJust": ""},
+            {"AplicFnc": ""},
+            {"AplicAbrang": ""},
+            {"AplicAmbito": ""},
+            {"TxDifTec": ""}
+        ],
+        "PD_EquipeEmp": [
+            {
+                "Empresas": [
+                    {
+                        "Empresa": [
+                            {"CodEmpresa": ""},
+                            {"TipoEmpresa": ""},
+                            {
+                                "Equipe": [
+                                    {
+                                        "EquipeEmpresa": [
+                                            {"NomeMbEqEmp": ""},
+                                            {"CpfMbEqEmp": ""},
+                                            {"TitulacaoMbEqEmp": ""},
+                                            {"FuncaoMbEqEmp": ""},
+                                            {"HhMbEqEmp": ""},
+                                            {"MesMbEqEmp": ""},
+                                            {"HoraMesMbEqEmp": ""}
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "PD_EquipeExec": [
+            {
+                "Executoras": [
+                    {
+                        "Executora": [
+                            {"CNPJExec": ""},
+                            {"RazaoSocialExec": ""},
+                            {"UfExec": ""},
+                            {
+                                "Equipe": [
+                                    {
+                                        "EquipeExec": [
+                                            {"NomeMbEqExec": ""},
+                                            {"BRMbEqExec": ""},
+                                            {"DocMbEqExec": ""},
+                                            {"TitulacaoMbEqExec": ""},
+                                            {"FuncaoMbEqExec": ""},
+                                            {"HhMbEqExec": ""},
+                                            {"MesMbEqExec": ""},
+                                            {"HoraMesMbEqExec": ""}
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "PD_Etapas": [
+            {
+                "Etapa": [
+                    {"EtapaN": ""},
+                    {"Atividades": ""},
+                    {"MesExecEtapa": ""}
+                ]
+            }
+        ],
+        "PD_Recursos": [
+            {
+                "RecursoEmpresa": [
+                    {"CodEmpresa": ""},
+                    {
+                        "DestRecursos": [
+                            {
+                                "DestRecursosEmp": [
+                                    {
+                                        "CustoCatContabil": [
+                                            {"CategoriaContabil": ""},
+                                            {
+                                                "ItemDespesa": [
+                                                    {"NomeItem": ""},
+                                                    {"JustificaItem": ""},
+                                                    {"QtdeItem": ""},
+                                                    {"ValorIndItem": ""},
+                                                    {"TipoItem": ""},
+                                                    {"ItemLabE": ""},
+                                                    {"ItemLabN": ""}
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "RecursoParceira": {
+                    "CNPJParc": "",
+                    "CEPParc": "",
+                    "DestRecursosExec": {
+                        "CNPJExec": "",
+                        "CEPExec": "",
+                        "CustoCatContabil":
+                        {
+                            "CategoriaContabil": "",
+                            "ItemDespesa": {
+                                "NomeItem": "",
+                                "JustificaItem": "",
+                                "QtdeItem": "",
+                                "ValorIndItem": "",
+                                "TipoItem": "",
+                                "ItemLabE": "",
+                                "ItemLabN": ""
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        ],
+        "PD_Resultados": [
+            {
+                "PD_ResultadosCT": [
+                    {
+                        "PD_ResultadosCT_PI": [
+                            {
+                                "IdCT_PI": [
+                                    {"TipoCT_PI": ""},
+                                    {"DataCT_PI": ""},
+                                    {"NumeroCT_PI": ""},
+                                    {"TituloCT_PI": ""},
+                                    {
+                                        "Inventores_PI": [
+                                            {
+                                                "Inventor": [
+                                                    {"DocMbEqCT_PI": ""}
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Depositantes_PI": [
+                                            {
+                                                "Depositante": [
+                                                    {"CNPJInstCT_PI": ""},
+                                                    {"PercInstCT_PI": ""}
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "PD_ResultadosSA": [
+                    {
+                        "IdSA": [
+                            {"TipoISA": ""},
+                            {"PossibISA": ""},
+                            {"TxtISA": ""}
+                        ]
+                    }
+                ]
+            },
+            {
+                "PD_ResultadosIE": [
+                    {
+                        "IdIE": [
+                            {"TipoIE": ""},
+                            {"TxtBenefIE": ""},
+                            {"UnidBenefIE": ""},
+                            {"BaseBenefIE": ""},
+                            {"PerBenefIE": ""},
+                            {"VlrBenefIE": ""}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

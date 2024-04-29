@@ -1,0 +1,20 @@
+{
+    "multipleFields": [
+        "subtemas",
+        "etapa",
+        "recursoempresa",
+        "subtema",
+        "empresa",
+        "equipeempresa",
+        "equipeexec",
+        "equipe",
+        "destrecursosexec",
+        "custocatcontabil",
+        "custocatcontabilexec",
+        "itemdespesa",
+        "custocatcontabilemp",
+        "itemdespesa",
+        "depositante",
+        "inventor"
+    ]
+}

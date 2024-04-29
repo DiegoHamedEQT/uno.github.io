@@ -1,0 +1,13 @@
+.square-container {
+    background-color: white;
+    padding: 15px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Para centralizar horizontalmente */
+    align-items: center; /* Para centralizar verticalmente */
+    border: 2px dashed rgb(194, 15, 181); /* Adicionando borda preta para visualização */
+    justify-items: center;
+    border-radius: 10px;
+}

@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import FormBuilder from './pages/FormBuilder';
+import TopNavigation from './pages/components/TopNavigation';
+import Home from './pages/Home';
 
 function App() {
+  let component
+  switch (window.location.pathname) {
+    case "/":
+      component = <Home />
+      break
+    case "/relatorio-final-pid":
+      component = <FormBuilder rel={"relatorio-final-pid"}/>
+      break
+    case "/relatorio-projeto-ped":
+      component = <FormBuilder rel={"relatorio-projeto-ped"}/>
+      break
+    case "/interesse-projeto-ped":
+      component = <FormBuilder rel={"relatorio-interesse-projeto-ped"}/>
+      break
+    case "/saved-form":
+      component = <FormBuilder rel={"saved-form"} />
+      break
+    case "/uploaded-form":
+      component = <FormBuilder rel={"uploaded-form"} />
+      break
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <TopNavigation />
+      {component}
+    </>
+  )
+
 }
 
 export default App;

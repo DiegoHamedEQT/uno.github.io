@@ -1,0 +1,156 @@
+<body>
+    <form method="post" id="formulario" class="xml-form">
+      <fieldset name="PED" id="PED">
+        <legend class="xml legend">PED</legend>
+        <fieldset name="PD_ProjetoBase" id="PD_ProjetoBase">
+          <legend>PD_ProjetoBase</legend>
+          <label for="AvIniANEEL">AvIniANEEL:</label>
+          <input type="text" id="AvIniANEEL" name="AvIniANEEL"><br><br>
+          <label for="Titulo">Titulo:</label>
+          <input type="text" id="Titulo" name="Titulo"><br><br>
+          <label for="Duracao">Duracao:</label>
+          <input type="text" id="Duracao" name="Duracao"><br><br>
+          <label for="Segmento">Segmento:</label>
+          <input type="text" id="Segmento" name="Segmento"><br><br>
+          <label for="CodTema">CodTema:</label>
+          <input type="text" id="CodTema" name="CodTema"><br><br>
+          <label for="OutroTema">OutroTema:</label>
+          <input type="text" id="OutroTema" name="OutroTema"><br><br>
+          <fieldset name="Subtemas" id="Subtemas">
+            <button type="button" name="btnAdd" id="btnAdd">+</button>
+            <button type="button" name="btnRemove" id="btnRemove">-</button>
+            <legend>Subtemas</legend>
+            <div class="fieldset-container">
+              <fieldset name="Subtema" id="Subtema">
+                <legend>Subtema</legend>
+                <label for="CodSubtema">CodSubtema:</label>
+                <input type="text" id="CodSubtema" name="CodSubtema"><br><br>
+                <label for="OutroSubtema">OutroSubtema:</label>
+                <input type="text" id="OutroSubtema" name="OutroSubtema"><br><br>
+              </fieldset>
+            </div>
+          </fieldset>
+          <label for="FaseInovacao">FaseInovacao:</label>
+          <input type="text" id="FaseInovacao" name="FaseInovacao"><br><br>
+          <label for="TipoProduto">TipoProduto:</label>
+          <input type="text" id="TipoProduto" name="TipoProduto"><br><br>
+          <label for="DescricaoProduto">DescricaoProduto:</label>
+          <input type="text" id="DescricaoProduto" name="DescricaoProduto"><br><br>
+          <label for="Motivacao">Motivacao:</label>
+          <input type="text" id="Motivacao" name="Motivacao"><br><br>
+          <label for="Originalidade">Originalidade:</label>
+          <input type="text" id="Originalidade" name="Originalidade"><br><br>
+          <label for="Aplicabilidade">Aplicabilidade:</label>
+          <input type="text" id="Aplicabilidade" name="Aplicabilidade"><br><br>
+          <label for="Relevancia">Relevancia:</label>
+          <input type="text" id="Relevancia" name="Relevancia"><br><br>
+          <label for="RazoabCustos">RazoabCustos:</label>
+          <input type="text" id="RazoabCustos" name="RazoabCustos"><br><br>
+          <label for="PesqCorrelata">PesqCorrelata:</label>
+          <input type="text" id="PesqCorrelata" name="PesqCorrelata"><br><br>
+        </fieldset>
+        <fieldset name="PD_Equipe" id="PD_Equipe">
+          <legend>PD_Equipe</legend>
+          <fieldset name="Empresas" id="Empresas">
+            <legend>Empresas</legend>
+            <div class="fieldset-container">
+              <fieldset name="Empresa" id="Empresa">
+                <legend>Empresa</legend>
+                <label for="CodEmpresa">CodEmpresa:</label>
+                <!-- CodEmpresa é duplicado, coloca-se como Eq aqui e trata-se no backend -->
+                <input type="text" id="CodEmpresaEq" name="CodEmpresaEq"><br><br>
+                <label for="TipoEmpresa">TipoEmpresa:</label>
+                <input type="text" id="TipoEmpresa" name="TipoEmpresa"><br><br>
+                <fieldset name="Equipe" id="Equipe">
+                  <button type="button" disabled="true" hidden="true" name="btnAdd" id="btnAdd">+</button>
+                  <button type="button" disabled="true" hidden="true" name="btnRemove" id="btnRemove">-</button>
+                  <legend>Equipe</legend>
+                  <fieldset name="EquipeEmpresa" id="EquipeEmpresa">
+                    <legend>EquipeEmpresa</legend>
+                    <label for="NomeMbEqEmp">NomeMbEqEmp:</label>
+                    <input type="text" id="NomeMbEqEmp" name="NomeMbEqEmp"><br><br>
+                    <label for="CpfMbEqEmp">CpfMbEqEmp:</label>
+                    <input type="text" id="CpfMbEqEmp" name="CpfMbEqEmp"><br><br>
+                    <label for="TitulacaoMbEqEmp">TitulacaoMbEqEmp:</label>
+                    <input type="text" id="TitulacaoMbEqEmp" name="TitulacaoMbEqEmp"><br><br>
+                    <label for="FuncaoMbEqEmp">FuncaoMbEqEmp:</label>
+                    <input type="text" id="FuncaoMbEqEmp" name="FuncaoMbEqEmp"><br><br>
+                  </fieldset>
+                </fieldset>
+            </div>
+          </fieldset>
+            <fieldset name="Executoras" id="Executoras">
+              <legend>Executoras</legend>
+              <fieldset name="Executora" id="Executora">
+                <legend>Executora</legend>
+                <label for="CNPJExec">CNPJExec:</label>
+                <input type="text" id="CNPJExec" name="CNPJExec"><br><br>
+                <label for="RazaoSocialExec">RazaoSocialExec:</label>
+                <input type="text" id="RazaoSocialExec" name="RazaoSocialExec"><br><br>
+                <label for="UfExec">UfExec:</label>
+                <input type="text" id="UfExec" name="UfExec"><br><br>
+                <fieldset name="Equipe" id="Equipe">
+                  <legend>Equipe</legend>
+                  <div class="fieldset-container">
+                    <fieldset name="EquipeExec" id="EquipeExec">
+                      <legend>EquipeExec</legend>
+                      <label for="NomeMbEqExec">NomeMbEqExec:</label>
+                      <input type="text" id="NomeMbEqExec" name="NomeMbEqExec"><br><br>
+                      <label for="BRMbEqExec">BRMbEqExec:</label>
+                      <input type="text" id="BRMbEqExec" name="BRMbEqExec"><br><br>
+                      <label for="DocMbEqExec">DocMbEqExec:</label>
+                      <input type="text" id="DocMbEqExec" name="DocMbEqExec"><br><br>
+                      <label for="TitulacaoMbEqExec">TitulacaoMbEqExec:</label>
+                      <input type="text" id="TitulacaoMbEqExec" name="TitulacaoMbEqExec"><br><br>
+                      <label for="FuncaoMbEqExec">FuncaoMbEqExec:</label>
+                      <input type="text" id="FuncaoMbEqExec" name="FuncaoMbEqExec"><br><br>
+                    </fieldset>
+                  </div>
+                </fieldset>
+              </fieldset>
+            </fieldset>
+          </fieldset>
+        </fieldset>
+        <fieldset name="PD_Recursos" id="PD_Recursos">
+          <legend>PD_Recursos</legend>
+          <div class="fieldset-container">
+            <fieldset name="RecursoEmpresa" id="RecursoEmpresa">
+              <legend>RecursoEmpresa</legend>
+              <label for="CodEmpresa">CodEmpresa:</label>
+              <!-- CodEmpresa é duplicado, coloca-se como Rec aqui e trata-se no backend -->
+              <input type="text" id="CodEmpresaRec" name="CodEmpresaRec"><br><br>
+              <fieldset name="DestRecursoExec" id="DestRecursoExec">
+                <legend>DestRecursosExec</legend>
+                <label for="CNPJExec">CNPJExec:</label>
+                <input type="text" id="CNPJExec" name="CNPJExec"><br><br>
+                <div class="fieldset-container">
+                  <fieldset name="CustoCatContabilExec" id="CustoCatContabilExec">
+                    <legend>CustoCatContabilExec</legend>
+                    <label for="CatContabil">CatContabil:</label>
+                    <!-- CatContabil é duplicado, coloca-se como Exec aqui e trata-se no backend -->
+                    <input type="text" id="CatContabilExec" name="CatContabilExec"><br><br>
+                    <label for="CustoExec">CustoExec:</label>
+                    <input type="text" id="CustoExec" name="CustoExec"><br><br>
+                  </fieldset>
+                </div>
+                <fieldset name="DestRecursosEmp" id="DestRecursosEmp">
+                  <legend>DestRecursosEmp</legend>
+                  <div class="fieldset-container">
+                    <fieldset name="CustoCatContabilEmp" id="CustoCatContabilEmp">
+                      <legend>CustoCatContabilEmp</legend>
+                      <label for="CatContabil">CatContabil:</label>
+                      <!-- CatContabil é duplicado, coloca-se como Emp aqui e trata-se no backend -->
+                      <input type="text" id="CatContabilEmp" name="CatContabilEmp"><br><br>
+                      <label for="CustoEmp">CustoEmp:</label>
+                      <input type="text" id="CustoEmp" name="CustoEmp"><br><br>
+                    </fieldset>
+                  </div>
+                </fieldset>
+              </fieldset>
+            </fieldset>
+          </div>
+        </fieldset>
+        <button type="button" id="btnSubmit">Testar</button>
+      </fieldset>
+    </form>
+  </body>

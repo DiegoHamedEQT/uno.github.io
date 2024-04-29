@@ -1,0 +1,1026 @@
+{
+    "CustoCatContabil": {
+      "categoriacontabil": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "itemdespesa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    },
+    "CustoCatContabilEmp": {
+      "categoriacontabil": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "custoemp": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "itemdespesa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    },
+    "CustoCatContabilExec": {
+      "catcontabil": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "custoexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "Depositantes_PI": {
+      "depositante": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    },
+    "DestRecursos": {
+      "codempresa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "5",
+        "multivalued": "false",
+        "type": "N"
+      },
+      "destrecursosemp": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "destrecursosexec": {
+        "derivation": "true",
+        "list": "true",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    },
+    "DestRecursosEmp": {
+      "custocatcontabilemp": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    },
+    "DestRecursosExec": {
+      "catcontabil": {
+        "derivation": "false",
+        "list": "true",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "cnpjexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "14",
+        "multivalued": "false",
+        "type": "N"
+      },
+      "custocatcontabil": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      },
+      "custocatcontabilexec": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      },
+      "custoexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": "M"
+      }
+    },
+    "Empresa": {
+      "codempresa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "5",
+        "multivalued": "false",
+        "type": "N"
+      },
+      "equipe": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "tipoempresa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "Empresas": {
+      "empresa": {
+        "derivation": "true",
+        "list": "true",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    },
+    "Equipe": {
+      "equipeempresa": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      },
+      "equipeexec": {
+        "derivation": "true",
+        "list": "true",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    },
+    "EquipeEmpresa": {
+      "cpfmbeqemp": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "11",
+        "multivalued": "false",
+        "type": "N"
+      },
+      "funcaombeqemp": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "nomembeqemp": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "titulacaombeqemp": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "EquipeExec": {
+      "brmbeqexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "docmbeqexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "20",
+        "multivalued": "false",
+        "type": "N"
+      },
+      "funcaombeqexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "nomembeqexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "titulacaombeqexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "Etapa": {
+      "atividades": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "etapan": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "mesexecetapa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "Executora": {
+      "cnpjexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "14",
+        "multivalued": "false",
+        "type": "N"
+      },
+      "efexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "equipe": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      },
+      "razaosocialexec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "Executoras": {
+      "executora": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "IdCT_PI": {
+      "datact_pi": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "depositantes_pi": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "inventores_pi": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "numeroct_pi": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "tipoct_pi": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "tituloct_pi": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "IdIE": {
+      "basebenefie": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "perbenefie": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "tipoie": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "txtbenefie": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "unidbenefie": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "vlrbenefie": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "IdSA": {
+      "possibisa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "tipoisa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "txtisa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "Inventor": {
+      "docmbeqct_pi": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "Inventores_PI": {
+      "inventor": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    },
+    "ItemDespesa": {
+      "itemlabe": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "itemlabn": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "justificaitem": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "nomeitem": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "qtdeitem": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "tipoitem": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "valorinditem": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "PD_Equipe": {
+      "empresas": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "executoras": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "PD_Etapas": {
+      "etapa": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    },
+    "PD_ProjetoBase": {
+      "aplicabilidade": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "2000",
+        "multivalued": "false",
+        "type": "T"
+      },
+      "codtema": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "descricaoproduto": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "300",
+        "multivalued": "false",
+        "type": "T"
+      },
+      "duracao": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": "N"
+      },
+      "faseinovacao": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "mavinianeel": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "motivacao": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "2000",
+        "multivalued": "false",
+        "type": "T"
+      },
+      "originalidade": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "2000",
+        "multivalued": "false",
+        "type": "T"
+      },
+      "outrotema": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "200",
+        "multivalued": "false",
+        "type": "T"
+      },
+      "pesqcorrelata": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "1000",
+        "multivalued": "false",
+        "type": "T"
+      },
+      "razoabcustos": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "2000",
+        "multivalued": "false",
+        "type": "T"
+      },
+      "relevancia": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "2000",
+        "multivalued": "false",
+        "type": "T"
+      },
+      "segmento": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "subtemas": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      },
+      "tipoproduto": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "titulo": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "200",
+        "multivalued": "false",
+        "type": "T"
+      }
+    },
+    "PD_Recursos": {
+      "recursoempresa": {
+        "derivation": "true",
+        "list": "true",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    },
+    "PD_RelFinalBase": {
+      "aplicabrang": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "aplicambito": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "aplicfnc": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "aplicjust": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "aplicprev": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "arquivopdf": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "codprojeto": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "datafimods": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "datainiods": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "prodesptec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "prodjust": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "prodprev": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "tecdesc": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "tecjust": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "tecprev": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "txdiftec": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "PD_Resultados": {
+      "pd_resultadosct": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "pd_resultadosie": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "pd_resultadossa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "PD_ResultadosCT": {
+      "pd_resultadosct_pi": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "PD_ResultadosCT_PI": {
+      "idct_pi": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "PD_ResultadosIE": {
+      "idie": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "PD_ResultadosSA": {
+      "idsa": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "PED": {
+      "pd_equipe": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "pd_etapas": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "pd_projetobase": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "pd_recursos": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "pd_relfinalbase": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "pd_resultados": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "true",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "RecursoEmpresa": {
+      "destrecursos": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "RecursoParceira": {
+      "cepparc": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "cnpjparc": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      }
+    },
+    "Subtema": {
+      "codsubtema": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "false",
+        "type": ""
+      },
+      "outrosubtema": {
+        "derivation": "false",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "200",
+        "multivalued": "false",
+        "type": "T"
+      }
+    },
+    "Subtemas": {
+      "subtema": {
+        "derivation": "true",
+        "list": "false",
+        "mandatory": "false",
+        "maxlength": "",
+        "multivalued": "true",
+        "type": ""
+      }
+    }
+  }
