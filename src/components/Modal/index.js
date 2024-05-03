@@ -6,7 +6,9 @@ import ModalSaveForm from './SaveForm';
 const Modal = () => {
     const [isOpen, setIsOpen] = useState(false);
     let modalContent, title;
-    if(window.location.pathname==="/"){
+    console.log(window.location.pathname)
+    if(window.location.hash==='' || window.location.hash==='#/'){
+        console.log('djsaoidjas')
         title="XMLs salvos"
         modalContent = <ModalLoadForm />
     } else {

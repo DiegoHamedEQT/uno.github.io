@@ -1,7 +1,7 @@
 import relFinalPed from '../json/relFinalPed.json';
 import relProjetoPed from '../json/relProjetoPed.json';
 import relInteresseProjetoPed from '../json/relInteresseProjetoPed.json';
-import fieldRules from '../../pages/json/fieldRules.json'
+import fieldRules from '../../pages/json/fieldRules.json';
 import { useState } from 'react';
 import MultivalueButtons from '../../components/buttons/MultivalueButtons';
 import BtnGenerateXml from '../../components/buttons/GenerateXml';
@@ -56,9 +56,7 @@ function JsonReader({ json, multiList }) {
   let keys = Object.keys(json);
 
   const tagItems = keys.map((key) => {
-    // if (key === "EquipeEmpresa"){
-    //   // console.log("passou de novo")
-    // }
+    console.log(keys)
     // Verifico se temos um array de strings, assim sei que cheguei no nivel mais baixo hierárquico
     if (
       Object.prototype.toString.call(json[key]) === '[object Array]' 
@@ -69,37 +67,35 @@ function JsonReader({ json, multiList }) {
       )
     }
 
-    // if (Object.prototype.toString.call(json[key]) === '[object Array]' && json[key].length > 1){
-    //   let itemsList = [];
-    //   // console.log(json[key])
-    //   itemsList = json[key].map((element, index) => {
-    //     // console.log(element)
-    //     // console.log(key)
-    //     // console.log("renderizando: "+ key)
-    //     // console.log(element)
-
-    //     let keys = Object.keys(element)
-    //     let items = keys.map((item, itemIndex) => (
-    //       // <TagItem key={itemIndex} name={item} value={element[item]} />
-    //       console.log('hduahdsiuh')
-          
-    //     ))
-    //     // console.log(items)
-        
-    //   })
-    //   return itemsList;
-    // }
+    if (Object.prototype.toString.call(json[key]) === '[object Array]' && json[key].length > 1){
+      let lista;
+      lista = json[key].map((item, i) => {
+        return (
+          <>
+            {multiList.includes(key.toLowerCase()) && i === 0 && <MultivalueButtons />}
+              <fieldset className='p-3 flex flex-col gap-2' name={key}>
+              <legend className='font-bold px-2 text-yellow'>{key}</legend>
+              <hr className="flex-grow border-b border-yellow"/>
+                <JsonReader key={key} json={item} multiList={multiList} />
+            </fieldset>
+          </>
+        )
+      })
+      return lista
+    }
 
     if (typeof json[key] === 'object') {
       // TODO - Melhorar lógica. Por enquanto, isso resolve o problema de aparecerem números "aleatórios".
       if (!isNaN(key)) {
         return <JsonReader key={key} json={json[key]} multiList={multiList} />
       }
+      
+      
       return (
         <div key={key} className="fieldset-container bg-wgray" name={key}>
           {multiList.includes(key.toLowerCase()) && <MultivalueButtons />}
           <fieldset className='p-3 flex flex-col gap-2' name={key}>
-            <legend className='font-bold px-2 text-yellow'>{key}</legend>
+            <legend className='font-bold px-2 text-yellow'>{removeNumbers(key)}</legend>
             <hr className="flex-grow border-b border-yellow"/>
             <JsonReader key={key} json={json[key]} multiList={multiList} />
           </fieldset>
@@ -162,12 +158,27 @@ function TagItem({ name, value, itemConf }) {
 }
 
 function getSavedForm(){
-  let urlParams = new URLSearchParams(window.location.search);
-  let form = urlParams.get('form');
-  return loadForm(form);
+  var hash = window.location.hash;
+  var partes = hash.split('?');
+  var parametros = partes[1];
+  var parametrosSeparados = parametros.split('&');
+  let valorForm;
+  for (var i = 0; i < parametrosSeparados.length; i++) {
+      var parametro = parametrosSeparados[i].split('=');
+      if (parametro[0] === 'form') {
+          valorForm = parametro[1];
+          console.log('Valor de form:', valorForm);
+          break; 
+      }
+  }
+  return loadForm(valorForm);
 }
 
 function loadForm(form){
   let f = window.localStorage.getItem(form);
   return JSON.parse(f);
+}
+
+function removeNumbers(str) {
+  return str.replace(/\d/g, '');
 }

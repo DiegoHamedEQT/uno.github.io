@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { HashRouter, Link } from 'react-router-dom'
 
 export default function ModalLoadForm(){
     const localStorageKeys = Object.keys(localStorage);
@@ -22,24 +23,16 @@ export default function ModalLoadForm(){
                     ))}
                 </select>
         </div>
-                {/* {selectedVariable && (
-                    <div>
-                    <p>XML selecionado: {selectedVariable}</p>
-                    </div>
-                )} */}
-                <div class="flex justify-center pt-5">
-                    <button 
-                        className="bg-[#bc10a8] hover:bg-[#800f72] focus:ring rounded-full font-semibold text-white px-5 py-2" 
-                        onClick={() => redirectToForm(selectedVariable)}>Confirmar</button>
-                </div>
+        <div class="flex justify-center pt-5">
+            <Link onClick={() => {preventDefault(selectedVariable)}} className={"bg-[#bc10a8] hover:bg-[#800f72] focus:ring rounded-full font-semibold text-white px-5 py-2"} to={`saved-form?form=${selectedVariable}`}>Confirmar</Link>
+        </div>
         </div>
     )
 }
 
-function redirectToForm(form){
+function preventDefault(form){
     if(!form){
         alert("Selecione um formulário!");
         return;
     }
-    window.location.href = window.location.href+"saved-form?form="+form;
 }
