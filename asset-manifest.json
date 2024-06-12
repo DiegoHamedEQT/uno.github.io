@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/uno.github.io/static/css/main.88382f89.css",
-    "main.js": "/uno.github.io/static/js/main.794f045b.js",
+    "main.js": "/uno.github.io/static/js/main.b496f2fb.js",
     "service-worker.js": "/uno.github.io/service-worker.js",
     "index.html": "/uno.github.io/index.html",
     "main.88382f89.css.map": "/uno.github.io/static/css/main.88382f89.css.map",
-    "main.794f045b.js.map": "/uno.github.io/static/js/main.794f045b.js.map"
+    "main.b496f2fb.js.map": "/uno.github.io/static/js/main.b496f2fb.js.map"
   },
   "entrypoints": [
     "static/css/main.88382f89.css",
-    "static/js/main.794f045b.js"
+    "static/js/main.b496f2fb.js"
   ]
 }
